@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='description' content='HTML, CSS and JS library to create incredible websites'>
+    <meta name='author' content='Mateo Gasme'>
+    <link rel='icon' href={{{ icon }}}>
+    <meta http-equiv='Content-Type' content='text/html; ISO-8859-1'>
+    <meta name='robots' content='index, follow'>
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <title>{{{ title }}}</title>
+    <!-- Custom CSS -->
+    <link rel='stylesheet' href='css/style.css'>
+    <!-- Font Awesome -->
+    <script src='https://kit.fontawesome.com/64a96ba884.js' crossorigin='anonymous'></script>
+    <!-- Animate.css -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'>
+    {{!-- Magin Animations --}}
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/magic/1.1.0/magic.min.css' integrity='sha512-5KJYgPF7pe0cdJAg/9X6UdHE5cN9fqjjIi8ASyIqlcsKZdHVouNRcweLGEdtrIJJxMn+GqwJBjAurCjWOvEdJQ==' crossorigin='anonymous' referrerpolicy='no-referrer'>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- bars -->
+            <picture class='bars'>
+                <i class='fas fa-bars' onerror='this.parentNode.removeChild(this);'></i>
+            </picture>
+            <aside class='mobile'>
+                <ul>
+                    <div class='close'>
+                        <i class='fas fa-times' onerror='this.parentNode.removeChild(this);'></i>
+                    </div>
+                    <li><a href='/docs/1.0/'>Docs</a></li>
+                    <li><a href='#'>Templates</a></li>
+                    <li><a href='#'>Versions</a></li>
+                    <li><a href='/support'>Support</a></li>
+                </ul>
+            </aside>
+            <div class='bg-dark'></div>
+
+            <!-- logo -->
+            <a href='/' class='logo-container'>
+                <i class='fa-solid fa-gem logo' onerror='this.parentNode.removeChild(this);'></i>
+            </a>
+            <ul>
+                <li><a href='docs/1.0/'>Docs</a></li>
+                <li><a href='#'>Templates</a></li>
+                <li><a href='#'>Versions</a></li>
+                <li><a href='support'>Support</a></li>
+            </ul>
+        </nav>
+        <nav class='right'>
+            <aside class='social'>
+                <a href='#'><i class='fab fa-facebook-f' onerror='this.parentNode.removeChild(this);'></i></a>
+                <a href='#'><i class='fab fa-twitter' onerror='this.parentNode.removeChild(this);'></i></a>
+                <a href='#'><i class='fab fa-instagram' onerror='this.parentNode.removeChild(this);'></i></a>
+                <a href='#'><i class='fab fa-github' onerror='this.parentNode.removeChild(this);'></i></a>
+            </aside>
+            <span>1.0v</span>
+        </nav>
+    </header>
+
+    <main class='animate__animated animate__fadeIn magictime vanishIn'>
+        {{{ body }}}
+    </main>
+
+    <aside class='banner-cookies animate__animated animate__fadeInUp'>
+        <div class='text'>
+            <p>
+                This website uses cookies to ensure you get the best experience on our website.
+            </p>
+        </div>
+        <div class='buttons'>
+            <button href='#' class='accept'>
+                Accept
+                <i class='fa-solid fa-check' onerror='this.parentNode.removeChild(this);'></i>
+            </button>
+            <button href='#' class='decline'>
+                Decline
+                <i class='fa-solid fa-times' onerror='this.parentNode.removeChild(this);'></i>
+            </button>
+        </div>
+    </aside>
+    <div class='cookies-dark'></div>
+
+    <script src='app.js'></script>
+</body>
+</html>
